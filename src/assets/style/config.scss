@@ -1,0 +1,53 @@
+//color
+$primary-color          : #3399ff;
+$info-color             : #2db7f5;
+$success-color          : #00cc66;
+$warning-color          : #ff9900;
+$error-color            : #f5354d;
+$write-color            : #fff;
+$subsidiary-color       : #9ea7b4;
+$rate-star-color        : #f5a623;
+$color                  : #ff495e;
+
+
+// Base
+$body-background        : #e7ecec;
+$font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+$code-family            : Consolas,Menlo,Courier,monospace;
+$title-color            : #464c5b;
+$text-color             : #333;
+$text-title-color       : #000;
+$link-color             : #3eb1fa;
+$link-hover-color       : lighten($link-color, 5%);
+$link-active-color      : darken($link-color, 5%);
+$font-size-base         : 1rem;
+$font-size-small        : .86rem;
+$line-height-base       : 1.5;
+$border-radius-base     : .2rem;
+$border-radius-small    : .1rem;
+$cursor-disabled        : not-allowed;
+
+$tab-height             :3.6rem;
+$component-height       :3.2rem;
+
+// Border color
+$border-color-base      : #dfe2e2;  // outside
+$border-color-split     : #e3e8ee;  // inside
+
+// padding
+$padding-all            :.8rem ;
+
+// Animation
+$animation-time         : .3s;
+$transition-time        : .2s;
+$ease-in-out            : ease-in-out;
+
+
+//layout
+$icon-margin            :.5rem;
+$header-height          : 4.4rem;
+$nav-padding            : 1.4rem;
+
+//tool-title
+$tool-bg                :#f3f4f5;
+$tool-title-size        :1.5rem;

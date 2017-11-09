@@ -1,0 +1,118 @@
+
+
+@mixin shadow($xSize,$ySize,$size,$color){//阴影
+    -moz-box-shadow: $xSize $ySize $size $color  !important; /* 老的 Firefox */
+         box-shadow: $xSize $ySize $size $color  !important;
+}
+
+@mixin triangle($size,$top-color,$right-color,$bottom-color,$left-color){//三角形
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: $size solid $top-color;
+    border-right: $size solid $right-color;
+    border-bottom: $size solid $bottom-color;
+    border-left: $size solid $left-color;
+}
+
+@mixin translateX($size){//x轴位移
+    transform:translateX($size);
+    -webkit-transform:translateX($size);
+    -moz-transform:translateX($size);
+    -o-transform:translateX($size);
+    -ms-transform:translateX($size);
+}
+
+@mixin translateY($size){//x轴位移
+    transform:translateY($size);
+    -webkit-transform:translateY($size);
+    -moz-transform:translateY($size);
+    -o-transform:translateY($size);
+    -ms-transform:translateY($size);
+}
+
+@mixin translate3d($x,$y,$z){//x,y,z轴位移
+    transform:translate3d($x,$y,$z);
+    -webkit-transform:translate3d($x,$y,$z);
+    -moz-transform:translate3d($x,$y,$z);
+    -o-transform:translate3d($x,$y,$z);
+    -ms-transform:translate3d($x,$y,$z);
+}
+
+@mixin disFlex(){
+    display:-moz-box !important;
+    display:-webkit-box !important;
+    display:box !important;
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -ms-flex !important;
+    display:flex !important;
+}
+
+@mixin disBox(){
+    display:box !important;
+    display:-webkit-box !important;
+}
+
+@mixin direction($items,$justify){//位置
+    display:flex;
+    display:-webkit-flex;
+    align-items: $items;
+    justify-content: $justify;
+}
+
+@mixin box-pack($align,$pack){
+    display: box;
+    display: -moz-box;
+    display: -webkit-box;
+    
+    box-pack:$pack;
+    -webkit-box-pack:$pack;
+
+    box-align:$align;
+    -webkit-box-align:$align;
+    -moz-box-align:$align;  
+}
+
+@mixin boxDirection(){
+    -moz-box-pack:end;
+	-webkit-box-pack:end;
+	-o-box-pack:end;
+	box-pack:end;
+}
+@mixin flex1-1(){
+    box-flex: 1;
+    -moz-box-flex:1;
+    -webkit-box-flex: 1;
+    flex: 1 !important;
+    -webkit-flex:1 !important;
+}
+
+@mixin transition($type,$time){
+    -webkit-transition: $type $time;	/* Safari 和 Chrome */
+       -moz-transition: $type $time;	/* Firefox 4 */
+         -o-transition: $type $time;
+            transition: $type $time;
+}
+
+@mixin ransformRotate($deg){//旋转
+    transform:rotate($deg);
+    -ms-transform:rotate($deg); 	/* IE 9 */
+    -moz-transform:rotate($deg); 	/* Firefox */
+    -webkit-transform:rotate($deg); /* Safari 和 Chrome */
+    -o-transform:rotate($deg); 	/* Opera */
+}
+
+@mixin ellipses(){
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    -webkit-box-orient:vertical;
+}
+
+@mixin urlAbsolute(){
+    position:absolute; top:0; right:0; bottom:0; left:0;
+}
+
+@mixin box-flex(){
+
+}

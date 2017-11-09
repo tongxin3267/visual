@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>dscmall-mobile</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <link href="//at.alicdn.com/t/font_u366719ytlat6gvi.css" rel="stylesheet">
+  <link href="//at.alicdn.com/t/font_lkv63qpdlo8khuxr.css" rel="stylesheet">
+  <script>
+    // window.shopInfo = {ruid :0,authority:1};
+    window.shopInfo = { ruid: 0 };
+  </script>
+
+  <body>
+    <div id="app"></div>
+    
+    <script src="//3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js" async></script>
+    <!-- built files will be auto injected -->
+    <script>
+      document.body.ondrop = function (event) {//去除火狐默认事件
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    </script>
+  </body>
+
+</html>

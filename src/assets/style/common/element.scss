@@ -1,0 +1,174 @@
+@import '../config';
+@import '../mixins/common';
+
+//tabs
+.ec-tabs.el-tabs--border-card>.el-tabs__header{
+    background:#f3f4f5;
+    border:none;
+    height:$tab-height !important;
+   
+}
+
+.el-tabs__nav-wrap{
+  width:100% !important;
+}
+.el-tabs__nav{
+  height:$tab-height;
+   width:100%;
+  @include disFlex();
+}
+.el-tabs__item.is-active{
+  color:#333 !important;
+  background:#fff !important;
+}
+
+.el-tabs--border-card>.el-tabs__header>.el-tabs__item.is-active:last-child{
+  border-left-color:none;
+  border-right-color:none;
+}
+.el-tabs--border-card>.el-tabs__header>.el-tabs__item.is-active:first-child {
+    border-left-color: none;
+    border-right-color:none;
+}
+
+.el-tabs__item{
+  height:$tab-height !important;
+  line-height: $tab-height !important;
+  text-align: center;
+  color:#666;border:0 !important; margin-right: 0px !important;
+  margin-left: 0px !important;
+  @include flex1-1();
+}
+
+/*admin-pages*/
+.pages .el-tabs--border-card > .el-tabs__content{
+   top:$tab-height;
+   overflow-x: hidden;
+   bottom:0;
+   width:100%;
+   position:absolute;
+}
+
+.pages .el-tabs--border-card > .el-tabs__content .el-tab-pane{
+  position:absolute;
+  top:5.4rem;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:15px;
+  overflow-y:scroll;
+}
+
+.pages .el-tabs--border-card > .el-tabs__content .el-tab-pane.system{
+  top:.8rem;
+}
+
+/*radio*/
+
+.el-checkbox__inner::after{
+  width:4px !important;
+  height:7px !important;
+  left:4px !important;
+}
+
+.el-radio+.el-radio{
+  margin-left:12px !important;
+}
+.el-radio__inner,.el-checkbox__inner{
+  width:16px !important;
+  height:16px !important;
+}
+
+
+/*dropdown*/
+.el-dropdown-menu{
+  border-radius: 8px;
+  border:0 !important;
+  @include shadow(0px,0px,8px,rgba(106,106,106,.3));
+  padding:.7rem 0 !important;
+}
+
+.el-dropdown-menu__item{
+  font-size:1.3rem;
+  padding:0 16px !important;
+  line-height: 30px !important;
+}
+
+.el-dropdown-menu__item:hover{
+  color:$link-color !important;
+  background:none !important;
+}
+.el-input__inner{
+  font-size:13px !important;
+  padding:2px 8px !important;
+  border:1px solid #e3e8ee !important;
+}
+/*color-input*/
+.color-value .el-input__inner{
+    border-radius: 4px 0px 0px 4px;
+}
+
+/*datetime*/
+.el-date-editor.el-input{
+  width:100% !important;
+}
+
+.el-loading-mask{
+  background-color:rgba(255,255,255,0.4) !important;
+}
+
+/*el-dialog*/
+.dialog-ec .el-dialog__header{
+    padding:16px;
+    border-bottom:1px solid $body-background;
+    position:relative;
+}
+
+.dialog-ec .el-dialog__body{
+    padding-top:16px;
+    padding-bottom:6px;
+}
+
+.dialog-picture .el-dialog__body,.dialog-goods .el-dialog__body{
+  position:relative;
+}
+
+.dialog-picture .el-dialog__body,.dialog-goods .el-dialog__body{
+  height:43.6rem
+}
+
+/*upload*/
+.custom-uploader.zindex-1 .el-upload{
+  z-index:-1
+}
+
+
+
+/*
+  swiper-lazy-preloader
+*/
+
+.swiper-lazy-preloader{
+  width:22px !important;
+  height:22px !important;
+  margin-left:-11px;
+  margin-top:-11px;
+}
+
+/*input checkbox*/
+.el-checkbox__inner{z-index: 0 !important}
+
+@media only screen and (max-width: 1540px) {
+  .dialog-picture .el-dialog__body,.dialog-goods .el-dialog__body{
+    height:37rem
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .dialog-picture .el-dialog__body,.dialog-goods .el-dialog__body{
+    height:31rem
+  }
+}
+
+.form-group--remak{
+  margin-top:-1.2rem;
+}
